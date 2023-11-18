@@ -1,0 +1,143 @@
+body {
+    background-color: #88c1d0;
+}
+
+@media screen and (min-width: 1681px) and (max-width: 1920px) {
+    body {
+        background-color: #ffca4b;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1680px) {
+    body {
+        background-color: #275fa0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        background-color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffca4b;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger-menu {
+    display: none;
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+#menu-toggle:checked + .nav-links ul li {
+    text-align: center;
+    margin-right: 0;
+}
+
+#menu-toggle:checked + .nav-links ul li a {
+    color: #fff;
+}
+
+#menu-toggle:checked + .nav-links .burger-menu::before,
+#menu-toggle:checked + .nav-links .burger-menu::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+@media (max-width: 767px) {
+    .nav-links ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .nav-links ul a {
+        color: #fff;
+    }
+
+    #menu-toggle:checked + .nav-links ul {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu::before,
+    .burger-menu::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+}
+

@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.Test {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex-basis: calc(100% - 10px);
+    padding: 30px;
+    margin:5px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+.section1{
+    background-color:#88c1d0 ;
+}
+
+.section2 {
+    background-color: #88c1d0;
+}
+
+.section3 {
+    background-color: #88c1d0;
+}
+
+.section4 {
+    background-color: #88c1d0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+    section {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        flex-basis: calc(100% - 10px);
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) {
+    section {
+        flex-basis: calc(25% - 10px);
+    }
+}
